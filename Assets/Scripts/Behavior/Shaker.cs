@@ -30,7 +30,10 @@ public class Shaker : MonoBehaviour {
 		get
 		{
 			if( this.ShakeSec <= 0 )
-				return 0;
+				return 0.0f;
+
+			if( _ShakeSecTimer <= 0 )
+				return 1.0f;
 
 			return (this.ShakeSec - _ShakeSecTimer) / this.ShakeSec;
 		}
