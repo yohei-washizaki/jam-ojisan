@@ -25,6 +25,14 @@ public class Shaker : MonoBehaviour {
 	State _State;
 	float _ShakeSecTimer;
 	Vector3 _Origin;
+
+	/// <summary>
+	/// 0.0 ~ 1.0 に正規化されたタイマーを得る。
+	/// 5秒のタイマーで、現在2秒経過している場合は 0.4 を返す。
+	/// 0秒のタイマーは常に 0 を返す。
+	/// 5秒のタイマーで、現在6秒経過している場合は、 1.0 を返す。
+	/// </summary>
+	/// <value>The normalized timer.</value>
 	float normalizedTimer
 	{
 		get
