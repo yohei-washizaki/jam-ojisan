@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[ExecuteInEditMode]
 public class Shaker : MonoBehaviour {
 	/// <summary>
 	/// The m shake sec.
