@@ -7,6 +7,8 @@ public class Shaker : MonoBehaviour {
 	/// </summary>
 	public float ShakeSec = 1.0f;
 
+
+
 	public List<AnimationCurve> Degrees = new List<AnimationCurve>(3);
 
 	/// <summary>
