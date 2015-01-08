@@ -8,8 +8,7 @@ public class Shaker : MonoBehaviour {
 	public float ShakeSec = 1.0f;
 
 
-
-	public List<AnimationCurve> Degrees = new List<AnimationCurve>(3);
+	public AnimationCurve _Curve;
 
 	/// <summary>
 	/// Shake this instance.
@@ -79,7 +78,7 @@ public class Shaker : MonoBehaviour {
 		}
 
 		// shake this instance
-		Vector3 degree = Random.insideUnitSphere * Degrees[0].Evaluate(1.0f - this.normalizedTimer);
+		Vector3 degree = Random.insideUnitSphere * +_Curve.Evaluate(1.0f - this.normalizedTimer);
 		this.transform.position = _Origin + degree;
 	}
 
